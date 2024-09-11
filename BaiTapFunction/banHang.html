@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/BaiTapFunction/banHang.css">
+</head>
+    <title>New Product</title>
+
+<body>
+    <h1>New Product</h1>
+    <hr/>
+    <form name="frm">
+        <p>
+            <label>
+                Product Name
+                <input type="text" name="pname" id="pname"/>
+            </label>
+            <label>
+                Quantity
+                <input type="text" name="qty" id="qty"/>
+            </label>
+        </p>
+        <p>
+            <label>
+                Unit Price
+                <input type="text" name="up" id="up"/>
+            </label>
+            <label >
+                Discount 
+                <input type="text" name="dc" id="dc"/>
+            </label>
+        </p>
+        <div class="two-button">
+        <p>
+            <button type="button" onclick="sell()">Sell</button>
+            <button type="button">Cancel</button>
+        </p>
+        </div>
+
+        <table id="tbl">
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Discount</th>
+                <th>Subtotal</th>
+            </tr>
+        </table>
+        <script src="/BaiTapFunction/banHang.js"></script>
+        </script>
+    </form>
+</body>
+</html>

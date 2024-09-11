@@ -3,8 +3,6 @@ function myFunction1() {
     var s2 = parseFloat(document.getElementById('s2').value);
     var year = parseInt(document.getElementById('year').value);
     var sum;
-    
-    // Tính tổng điểm
     switch (year) {
         case 1:
         case 2:
@@ -15,8 +13,6 @@ function myFunction1() {
             sum = 0;
             break;
     }
-    
-    // Xác định loại học sinh
     var result = "";
     if (sum >= 9) {
         result = "Học sinh xuất sắc";
@@ -30,13 +26,11 @@ function myFunction1() {
         result = "Học sinh yếu";
     }
     
-    // Cập nhật ô Sumerise và thẻ kết quả chi tiết
     document.getElementById('kq').value = sum.toFixed(2);
     document.getElementById('XL').innerHTML = result;
     document.getElementById('XL').style.color = "red";
 }
 
 function myFunction2() {
-    // Implement functionality for Cancel button if needed
     alert("Cancel button clicked");
 }
